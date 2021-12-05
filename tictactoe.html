@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tictactoe.css" />
+  </head>
+  <body>
+    <section class="back">
+      <a class="btn-num" href="./index.html">Назад</a>
+    </section>
+    <section class="game-section">
+      <div class="count">
+        <svg class="ico-player">
+          <circle
+            r="45"
+            cx="58"
+            cy="58"
+            stroke="blue"
+            stroke-width="10"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
+        <p class="count-player" id="wono">0</p>
+        <p class="won-player" id="title1"></p>
+      </div>
+      <div class="conteiner">
+        <div class="game-container">
+          <div id="game"></div>
+          <button class="btn-num" id="reset">New Game</button>
+          <div id="result"></div>
+        </div>
+      </div>
+      <div class="count">
+        <svg class="ico-player">
+          <line
+            x1="15"
+            y1="15"
+            x2="100"
+            y2="100"
+            stroke="red"
+            stroke-width="10"
+            stroke-linecap="round"
+          />
+          <line
+            x1="100"
+            y1="15"
+            x2="15"
+            y2="100"
+            stroke="red"
+            stroke-width="10"
+            stroke-linecap="round"
+          />
+        </svg>
+        <p class="count-player" id="wonx">0</p>
+        <p class="won-player" id="title2"></p>
+      </div>
+    </section>
+    <!-- <button class="btn-num" id="newgame" type="button">Новая игра</button> -->
+    <script src="./js/tictactoe.js"></script>
+  </body>
+</html>

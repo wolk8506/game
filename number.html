@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="./css/number.css" />
+  </head>
+  <body>
+    <section class="back">
+      <a class="btn-num" href="./index.html">Назад</a>
+    </section>
+
+    <section class="section-game">
+      <h1 class="title">Угадай число</h1>
+      <p class="text" id="enterNum"></p>
+      <div class="blok-input">
+        <input
+          autocomplete="off"
+          class="usernum"
+          type="number"
+          id="usernum"
+          onkeypress="clickPress(event)"
+          oninput="maxLengthCheck(this)"
+        />
+        <button class="btn btn-num" onclick="f1()">Ввести число</button>
+        <p class="info" id="out"></p>
+        <button class="btn-num" onclick="fNew()">Новая игра</button>
+      </div>
+    </section>
+    <section class="section-game">
+      <fieldset>
+        <legend class="text">Выбирете сложность</legend>
+
+        <input
+          class="btn-radio"
+          id="n10"
+          type="radio"
+          name="myRadios"
+          onclick="handleClick(this);"
+          value="10"
+        />
+        <label for="n10">От 1 до 10</label>
+
+        <input
+          class="btn-radio"
+          id="n100"
+          type="radio"
+          name="myRadios"
+          onclick="handleClick(this);"
+          value="100"
+          checked
+        />
+        <label for="n100">От 1 до 100</label>
+
+        <input
+          class="btn-radio"
+          id="n1000"
+          type="radio"
+          name="myRadios"
+          onclick="handleClick(this);"
+          value="1000"
+        />
+        <label for="n1000">от 1 до 1000</label>
+      </fieldset>
+    </section>
+    <section class="section-game statistic">
+      <fieldset class="statistic-blok">
+        <legend class="text">Статистика игры</legend>
+        <p class="statistic-text" id="game"></p>
+        <p class="statistic-text" id="wongame"></p>
+        <p class="statistic-text" id="failgame"></p>
+      </fieldset>
+      <button class="btn btn-num" onclick="stat()">Сброс статистики</button>
+    </section>
+
+    <script src="./js/number.js"></script>
+  </body>
+</html>
