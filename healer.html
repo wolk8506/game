@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Виселица</title>
+    <link rel="stylesheet" href="./css/healer.css" />
+  </head>
+  <body>
+    <section class="back">
+      <a class="btn-num" href="./index.html">Назад</a>
+    </section>
+    <section class="section-game">
+      <h1>Виселица!</h1>
+      <p>Отгадай название реки</p>
+      <p class="text" id="enterNum"></p>
+      <div class="blok-input">
+        <input
+          autocomplete="off"
+          class="usernum"
+          type="text"
+          id="usernum"
+          onkeypress="clickPress(event)"
+        />
+        <button class="btn btn-num" id="btnClick" onclick="f1()">Ввести букву</button>
+        <p class="info" id="out"></p>
+        <button class="btn-num" id="newGame" onclick="fNew()">Новая игра</button>
+      </div>
+    </section>
+    <!-- <img src="./images/healer.jpg" alt="healer" width="600" /> -->
+    <script src="./js/healer.js"></script>
+  </body>
+</html>

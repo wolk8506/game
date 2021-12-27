@@ -1,0 +1,110 @@
+body {
+  /* background-image: url('../images/bg.jpg'); */
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  padding-top: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fcef38;
+}
+.back {
+  margin-bottom: 30px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-game {
+  background-image: linear-gradient(118.38deg, #29323cad -4.6%, #485563 200.44%),
+    url('../images/healer.jpg');
+  background-size: cover;
+  width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.blok-input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text {
+  font-size: 32px;
+}
+.usernum {
+  font-size: 28px;
+  padding-left: 10px;
+  width: 100px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.btn-radio {
+  width: 20px;
+  cursor: pointer;
+}
+
+.btn-num {
+  /* font-size: 22px;
+  background-color: #7fffd4;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+  cursor: pointer; */
+  min-width: 115px;
+  height: 30px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 2px solid #1c2229;
+  margin-left: auto;
+  margin-right: auto;
+  color: #7fff00;
+  text-shadow: 1px 1px 3px #f8f6d4d0;
+}
+.info {
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blok-hard {
+  border: 1px solid brown;
+}
+.statistic-text {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* .statistic-btn {
+  font-size: 18px;
+  background-color: aquamarine;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+  cursor: pointer;
+} */
+.statistic-blok {
+  margin-bottom: 15px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.is-visible {
+  opacity: 0;
+}
